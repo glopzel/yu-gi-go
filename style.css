@@ -1,0 +1,68 @@
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #cardHolder {
+    border: 3px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  #cardHolder > * {
+    width: 50%;
+  }
+  
+  input, button {
+    font-size: 1rem;
+  }
+  
+  button {
+    background: white;
+    border-style: none;
+  }
+  
+  button:hover {
+    background: purple;
+    color: white;
+  }
+  
+  #search {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #randomize {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  img {
+    height: 500px;
+    width: 350px;
+  }
+  
+  #cardText {
+    padding: 0.5rem 20%;
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 910px) {
+    #cardHolder {
+      flex-direction: column;
+      align-self: center;
+    }
+    
+    #cardHolder > * {
+      width: 100%;
+    }
+}
